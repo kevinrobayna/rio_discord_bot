@@ -35,9 +35,9 @@ jobs:
       uses: abatilo/actions-poetry@v2.1.0
       with:
         poetry-version: ${{ matrix.poetry-version }}
-    - name: View poetry --help
-      run: poetry --help
     - name: Install dependencies
-      run: poetry install
-    - name: Build
-      run: poetry build
+      run: make install
+    - name: tests
+      run: make unit
+    - name: lint
+      run: make lint

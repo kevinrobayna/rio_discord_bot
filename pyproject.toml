@@ -9,6 +9,7 @@ license = "MIT"
 python = "^3.7"
 ratelimit = "^2.2"
 requests = "^2.24"
+"discord.py" = "^1.6"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2"

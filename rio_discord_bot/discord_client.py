@@ -24,7 +24,6 @@ class DiscordClient(discord.Client):
         print(member)
 
     async def on_message(self, message):
-        print(message)
         if message.author == self.user:
             return
         if str(message.channel.id) != str(self.channel):

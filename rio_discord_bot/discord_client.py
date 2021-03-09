@@ -2,8 +2,7 @@ import discord
 
 
 class DiscordClient(discord.Client):
-    def __init__(self, guild: int, channel: int, players: list):
-        self.guild: int = guild
+    def __init__(self, channel: int, players: list):
         self.channel: int = channel
         self.players: list = players
 

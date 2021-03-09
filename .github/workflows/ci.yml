@@ -37,8 +37,6 @@ jobs:
         poetry-version: ${{ matrix.poetry-version }}
     - name: Install dependencies
       run: make install
-    - name: List Dependencies
-      run: pip list
     - name: tests
       run: make unit
     - name: lint
